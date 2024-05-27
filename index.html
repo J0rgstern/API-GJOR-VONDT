@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styleMain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    
+    <title>My API - main</title>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <header class="header_main">
+            <div id="menu_header">
+                <ul>
+                    <li>Breweries</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div id="menu_bar">
+                <input type="text" id="searchbar" autocomplete="" placeholder="Find breweries by state, arizona has extra functionality">
+                <button id="searchBtn">Search</button>
+                <button id="all" onclick="showAll()">All</button>
+            </div>
+            <div id="logo_main">
+                <p><i class="fa-solid fa-plate-wheat"></i></p>
+            </div>
+        </header>
+        <!-- Sidebar -->
+        <section class="sidebar">
+            <div id="infoboks">
+            </div>
+        </section>
+        <!-- main -->
+        <section class="main_main">
+            <div id="info">
+                <h1>Breweries</h1>
+                <p>Search for breweries from our catalog to gain info about where they are and how to contact them</p>
+            </div>
+            <div id="map1" style="height: 600px;"></div>
+        </section>
+        <section class="images_main">
+            <img id="card1" src="Img-api/doof.gif" alt="State Image">
+        </section>
+        <footer>
+    
+            <div id="footer">
+                <audio controls src="Img-api/System Of A Down - B.Y.O.B. (Official HD Video)_zUzd9KyIDrM.mp3"></audio>
+            </div>
+           
+        </footer>
+        <script src="code/menu.js"></script>
+        <script src="script.js"></script>
+        
+    </div>
+    
+</body>
+</html>

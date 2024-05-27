@@ -1,0 +1,251 @@
+*{
+    padding:0;
+    margin:0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image:url(/Img-api/apibg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: gray;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container{
+    top:0;
+    max-width:80%;
+    margin: auto;
+    justify-content: center;
+    padding: .5rem;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "footer footer footer";
+
+}
+.header_main{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: darkslategray;
+    align-items: center;
+    color: beige;
+}
+.header_main #menu_header{
+    grid-column: 1;
+}
+.header_main #menu_header ul{
+    display: flex;
+    list-style: none;
+    padding: 2rem;
+}
+.header_main #menu_header ul li{
+    padding: 1rem;
+    font-size: 1.9rem ;
+}
+.header_main #menu_bar{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    justify-content:center;
+
+}
+
+.header_main #menu_bar form{
+    display: flex;
+
+}
+.header_main #menu_bar input{
+
+    width:20rem;
+    padding:5px;
+    height: 2rem;    
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: beige;
+    margin-right: 1rem;
+    
+}
+.header_main #menu_bar p{
+
+    font-size: 1.5rem;
+}
+.header_main #logo_main{
+    grid-column: 3;
+    padding: 2rem;
+    text-align: center;
+
+}
+.header_main #logo_main p{
+    font-size: 5rem;
+    
+}
+
+#searchBtn, #all {
+    width:80px;
+    background-color: beige;
+    margin-right: 1rem;
+    border-radius: 5px;
+}
+/* ----------------------------------------------Side------------------------------------- */
+.sidebar{
+    grid-area: sidebar;
+    background-color:darkslategray;
+    align-items: center;
+    border-radius: 1rem;
+    color:white;
+}
+
+.sidebar #sidebar_options ul{
+    list-style: none;
+    padding: 1rem 0 1rem 0;
+}
+.sidebar #sidebar_options ul li{
+    padding: 0 0 1rem 0;
+    font-size: 25px;
+}
+
+#infoboks {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    height: auto;
+    min-height: 200px;
+    border:solid black;
+    background-color: beige;
+    color: #000;
+    margin: 1rem;
+    margin-top: 14rem;
+    font-size: 20px ;
+    padding:1rem;
+    overflow-y:scroll;
+}
+
+#infoboks::-webkit-scrollbar {
+    display: none;
+}
+
+/* main-------------------------------------------------------------------- */
+.main_main{
+    grid-column-start:2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    background-color: beige ;
+
+}
+.main_main #info{
+    padding: 10%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+
+}
+
+#sideinfo {
+    list-style-type: none;
+}
+
+.main_main #map1{
+    display: flex;
+    margin:auto ;
+    height: 40%;
+    width: 80%;
+    margin-left: 10%;
+    aspect-ratio: 1/1;
+    border:solid;
+    margin-top: -20px;
+    border-radius: 0 1rem 0 1rem;
+    margin-bottom: 5rem;
+
+}
+.main_main #map iframe{
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1;
+}
+#sidebar_options #btn{
+    padding: 1rem;
+    width:10rem;
+    height: auto;
+    aspect-ratio: 2/1;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.9rem;
+}
+
+#sidebar_options #myList{
+    display: none;
+    padding: 1rem;
+    background-color: beige;
+    
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+}
+#sidebar_options #myList li{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffff;
+}
+.images_main{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem;
+    background-color: beige ;
+    max-width: 1fr;
+    min-width:1fr ;
+
+}
+.images_main p{
+    font-size: 10rem;
+    padding: 1rem;
+}
+.images_main #card1{
+    
+    width:250px;
+    height:auto;
+    margin-top: 9rem;
+    border-radius: 5px;
+
+}
+footer{
+    grid-area: footer;
+    background-color:darkslategrey;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    min-height: 70px;
+}
+footer #info1 ul, #info2 ul{
+    list-style: none;
+    
+}
+
+
+
+
+
+
+ 
+
+  
